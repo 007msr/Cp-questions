@@ -1,0 +1,36 @@
+int main()
+{
+  int t ;
+  cin>>t;
+  while(t--)
+  {
+    int n,k;
+    string s;
+    cin>>n>>k;
+    cin>>s;
+    int count=0,size=0;
+    int i;
+    for(i=0;i<n;i++)
+    {
+        if(s[i]== '0')
+        {
+            size++;
+            if(size==k)
+            {
+                count++;
+                size=0;
+            }
+
+        }
+
+        else
+        {
+            size=0;
+        }
+
+    }
+    cout<<count<<endl;
+  }
+   return 0;
+}
+

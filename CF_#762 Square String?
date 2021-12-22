@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        string s;
+         cin>>s;
+         int size=s.size();
+         if(size%2!=0)
+            cout<<"NO"<<endl;
+         else{
+            int i=0,j=(size/2);
+         while(j<size)
+         {
+             if(s[i]==s[j])
+             {
+                 i++;
+                 j++;
+             }
+             else
+             {
+                 cout<<"NO"<<endl;
+                 break;
+             }
+         }
+         if(j==size)
+            cout<<"YES"<<endl;
+         }
+
+
+    }
+	return 0;
+}

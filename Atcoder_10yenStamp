@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+#include <cmath>
+using namespace std;
+int main()
+{
+    int x,y;
+    cin>>x>>y;
+    if(x>y)
+        cout<<0<<endl;
+    else if(x==y)
+    {
+        cout<<0<<endl;
+    }
+    else
+    {
+        int res=y-x;
+        if((res%10)==0)
+            cout<<(res/10)<<endl;
+        else
+            cout<<((res/10)+1)<<endl;
+    }
+
+
+
+    return 0;
+}
